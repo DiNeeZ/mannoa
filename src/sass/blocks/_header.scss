@@ -1,5 +1,8 @@
 .header {
-
+	width: 100%;
+	position: absolute;
+	background-color: $white;
+	z-index: 10;
 	&__container {
 		display: flex;
 		flex-direction: column;
@@ -9,6 +12,8 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		padding: 1.2rem 0;
+
 	}
 
 }
@@ -55,6 +60,7 @@
 }
 
 .main-nav {
+	padding: 1.2rem 0;
 	display: grid;
 	place-items: center;
 
@@ -88,7 +94,7 @@
 		color: inherit;
 
 		&::after {
-			content: "";
+			content: '';
 			position: absolute;
 			left: 50%;
 			bottom: 0;
@@ -98,8 +104,32 @@
 			background-color: transparent;
 			transition: width .15s ease-in-out;
 		}
+	}
+}
 
-		
+.search {
+	position: relative;
+	width: 63.8rem;
 
+	&__input {
+		width: 80%;
+		font-size: 1.6rem;
+		line-height: 1.5rem;
+		padding: 1.3rem 5.2rem 1.3rem 1.6rem;
+		outline: none;
+		border: 1px solid $grey-dark;
+
+	}
+
+	&__btn {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+
+		&.btn {
+			padding-top: 1.2rem;
+			padding-bottom: 1.2rem;
+		}
 	}
 }

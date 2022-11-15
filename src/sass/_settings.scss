@@ -21,7 +21,7 @@ body {
   min-height: 100%;
   font-size: 1.6rem;
   color: $font-primary;
-  background-color: $bg-primary;
+  background-color: $white;
 }
 
 img {
@@ -39,7 +39,8 @@ a {
 }
 
 .is-hidden {
-  display: none !important; /* stylelint-disable-line declaration-no-important */
+  display: none !important;
+  /* stylelint-disable-line declaration-no-important */
 }
 
 .btn-reset {
@@ -101,3 +102,47 @@ a {
 .page--ios .dis-scroll {
   position: relative;
 }
+
+.btn {
+  position: relative;
+  padding: 1.6rem 6.2rem 1.6rem 3.2rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+  color: $white;
+  text-transform: uppercase;
+  background-color: $accent-color;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: background-color .15s ease-in-out;
+
+  &:hover {
+    background-color: lighten($accent-color, 2%);
+
+    &::after {
+      right: 3rem;
+    }
+  }
+
+  &--transparent {
+    background-color: transparent;
+    border: 1px solid $white;
+
+    &:hover {
+      background-color: rgba($white, 0.05);
+    }
+  }
+
+  &::after {
+    content: url('images/icons/arrow-right.svg');
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 50%;
+    right: 3.2rem;
+    transform: translateY(-50%);
+    transition: right .15s ease-in-out;
+  }
+}
+

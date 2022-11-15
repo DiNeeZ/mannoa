@@ -1,0 +1,75 @@
+.collections {
+	margin-bottom: 8rem;
+
+	&__container {}
+
+	&__title {
+		margin: 0;
+		margin-bottom: 2.4rem;
+		font-weight: 500;
+		font-size: 3.2rem;
+		line-height: 3.9rem;
+		color: $green-dark;
+		text-align: center;
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2.4rem;
+	}
+
+	&__item {
+		background-color: $grey-dark;
+	}
+}
+
+.collection-card {
+	width: 100%;
+	height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 4rem 2.5rem;
+	background-size: cover;
+	background-position: center;
+
+	&--ethnic {
+		background-image: url('images/collection-bg-1.jpg');
+	}
+
+	&--season {
+		background-image: url('images/collection-bg-2.jpg');
+	}
+
+	&--naturals {
+		background-image: url('images/collection-bg-3.jpg');
+	}
+
+  
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+		justify-content: center;
+		padding-top: 78%;
+    color: $white;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+  }
+
+  &__subtitle {
+    margin-bottom: 2.2rem;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.25rem;
+  }
+
+}

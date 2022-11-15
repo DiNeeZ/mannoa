@@ -1,0 +1,91 @@
+.advantages {
+	margin-bottom: 8rem;
+	padding: 8.4rem 0;
+	font-weight: 500;
+	font-size: 2rem;
+	line-height: 3.2rem;
+	background-color: rgba($accent-color, 0.1);
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__list {
+		display: inline-flex;
+		flex-direction: column;
+		align-items: flex-start;
+		align-content: stretch;
+		gap: 2.4rem;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		gap: 1.6rem;
+		padding: 1.6rem;
+		background-color: #fdfef8;
+	}
+
+	&__icon {
+		position: relative;
+		line-height: 1rem;
+		display: block;
+		width: 4.8rem;
+		height: 4.8rem;
+		background-color: #f9fbf2;
+		border: 1px solid rgba(204, 219, 152, 0.3);
+
+		&::before {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		&--no-preservatives::before {
+			content: url('images/icons/on-1.png');
+		}
+
+		&--natural::before {
+			content: url('images/icons/on-2.png');
+		}
+
+		&--fresh::before {
+			content: url('images/icons/on-3.png');
+		}
+
+		&--harmonize::before {
+			content: url('images/icons/on-4.png');
+		}
+
+		&--dispensation::before {
+			content: url('images/icons/on-5.png');
+		}
+
+		&--custom::before {
+			content: url('images/icons/on-6.png');
+		}
+	}
+
+	&__brand {
+		display: grid;
+		place-items: center;
+		height: 31.2rem;
+		width: 38.7rem;
+		background-image: url('images/olivas-logo-bg.png');
+	}
+
+	&__logo {
+		width: 100%;
+		text-align: center;
+		padding: 2rem 0;
+		background-color: $white;
+	}
+
+	&__img {
+		object-fit: cover;
+		object-position: center;
+	}
+}
